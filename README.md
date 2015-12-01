@@ -112,6 +112,10 @@ EiB            | 1152921504606847000 (1024^6)
 
 JEDEC
 
+**Note** JEDEC options works basically the same as the base-2 ones, except
+that if you use the `prepend` option, it will, for example, correctly add
+'KB' and not 'KiB'.
+
 `to`           | Number of bytes
 -------------- | ----------------
 jedecKB        | 1024
