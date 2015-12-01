@@ -13,11 +13,11 @@ bytes2
 
 Convert bytes to another unit of information.
 
-**Note** Implementation based on (this wikipedia article)[https://en.wikipedia.org/wiki/Units_of_information].
+**Note** Implementation based on [this wikipedia article](https://en.wikipedia.org/wiki/Units_of_information).
 
 **Note** Some related modules:
-- (byte-converter)[https://www.npmjs.com/package/byte-converter]
-- (bytes)[https://www.npmjs.com/package/bytes]
+- [byte-converter](https://www.npmjs.com/package/byte-converter)
+- [bytes](https://www.npmjs.com/package/bytes)
 
 Install
 -------
