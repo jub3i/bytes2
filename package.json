@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jub3i/bytes2"
+  },
   "keywords": [
     "bytes",
     "convert",
@@ -19,6 +23,9 @@
     "binary",
     "decimal"
   ],
+  "bugs": {
+    "url": "https://github.com/jub3i/bytes2/issues"
+  },
   "author": "jub3i",
   "license": "MIT",
   "devDependencies": {
