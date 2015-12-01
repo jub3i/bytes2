@@ -1,0 +1,27 @@
+{
+  "name": "bytes2",
+  "version": "1.0.0",
+  "description": "Convert bytes to base-2 or base-10 units",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "bytes",
+    "convert",
+    "conversion",
+    "IEC",
+    "metric",
+    "SI",
+    "base",
+    "base-2",
+    "base-10",
+    "binary",
+    "decimal"
+  ],
+  "author": "jub3i",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
