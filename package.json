@@ -1,6 +1,6 @@
 {
   "name": "bytes2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert bytes to base-2 or base-10 units",
   "main": "index.js",
   "scripts": {
