@@ -66,7 +66,11 @@ console.log(value) // '0.9765625 KB'
 
 Convert `1000` bytes to `KiB`, showing only 3 decimal places, prepending the units and using `'-'` as the seperator:
 ```
-var value = bytes2('KiB', 1000, { decimals: 3, prepend: true, seperator: '-' })
+var value = bytes2('KiB', 1000, {
+  decimals: 3,
+  prepend: true,
+  seperator: '-',
+})
 console.log(value) // '0.977-KiB'
 ```
 
