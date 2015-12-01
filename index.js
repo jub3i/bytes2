@@ -1,11 +1,10 @@
-module.exports = {
-  bytes2: bytes2,
-}
+/*
+ * private variable storing the scale
+ */
 
 // see: https://en.wikipedia.org/wiki/Units_of_information
 var scale = {
   // base-10, decimal, SI and metric
-
   kB: 1000,
   MB: 1000000,
   GB: 1000000000,
@@ -14,7 +13,6 @@ var scale = {
   EB: 1000000000000000000,
 
   // base-2, binary and IEC
-
   KiB: 1024,
   MiB: 1048576,
   GiB: 1073741824,
@@ -28,6 +26,10 @@ var scale = {
   jedecMB: 1048576, /* MB in JEDEC */
   jedecGB: 1073741824, /* GB in JEDEC */
 }
+
+/*
+ * main function used to convert bytes
+ */
 
 function bytes2(to, bytes, opts) {
   opts = opts || {}
@@ -54,7 +56,7 @@ function bytes2(to, bytes, opts) {
         result += 'GB'
         break;
       default:
-        result = result + opts.seperator + to
+        result += to
         break;
     }
   }
@@ -62,22 +64,9 @@ function bytes2(to, bytes, opts) {
   return result
 }
 
-console.log(bytes2('kB', 1024))
+/*
+ * module exports
+ */
 
-console.log(bytes2('MiB', 1024 * 1024 * 3))
-
-console.log(bytes2('MB', 1000 * 1000 * 3))
-
-console.log(bytes2('kB', 1024, {
-  decimals: 2,
-}))
-
-console.log(bytes2('GiB', 1024 * 1024 * 3000, {
-  decimals: false,
-  prepend: true,
-}))
-
-console.log(bytes2('jedecGB', 1024 * 1024 * 3000, {
-  decimals: false,
-  prepend: true,
-}))
+module.exports = bytes2
+module.exports.scale = scale
