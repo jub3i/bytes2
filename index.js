@@ -48,16 +48,16 @@ function bytes2(to, bytes, opts) {
     switch (to) {
       case 'jedecKB':
         result += 'KB'
-        break;
+        break
       case 'jedecMB':
         result += 'MB'
-        break;
+        break
       case 'jedecGB':
         result += 'GB'
-        break;
+        break
       default:
         result += to
-        break;
+        break
     }
   }
 
