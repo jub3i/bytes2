@@ -83,10 +83,10 @@ Option         | Type         | Default            | Explanation
 -------------- | -------------| ------------------ | ------------
 to             | `String`     | none               | See table below
 bytes          | `Number`     | none               | Integer number of bytes to convert
-opts           | `Object`     | see below          | Options object, specify what you need the defaults will be filled in
+opts           | `Object`     | see below          | Options object, specify what you need and the defaults will be filled in
 opts.decimals  | `Number`     | all decimal places | The number of decimal places to round the result to
 opts.prepend   | `String`     | false              | Prepend the units and return a string
-opts.seperator | `String`     | ' '                | Specify what seperator to use with the `prepend` option
+opts.seperator | `String`     | ' '                | Specify what seperator to use with the `prepend` option. Only works if used in conjunction with `opts.prepend`.
 
 ### Base-10, decimal, SI and metric:
 
