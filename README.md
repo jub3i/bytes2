@@ -88,7 +88,7 @@ opts.decimals  | `Number`     | all decimal places | The number of decimal place
 opts.prepend   | `String`     | false              | Prepend the units and return a string
 opts.seperator | `String`     | ' '                | Specify what seperator to use with the `prepend` option
 
-Base-10, decimal, SI and metric:
+### Base-10, decimal, SI and metric:
 
 `to`           | Number of bytes
 -------------- | ----------------
@@ -99,7 +99,7 @@ TB             | 1000000000000 (1024^4)
 PB             | 1000000000000000 (1024^5)
 EB             | 1000000000000000000 (1024^6)
 
-Base-2, binary and IEC
+### Base-2, binary and IEC
 
 `to`           | Number of bytes
 -------------- | ----------------
@@ -110,7 +110,7 @@ TiB            | 1099511627776 (1024^4)
 PiB            | 1125899906842624 (1024^5)
 EiB            | 1152921504606847000 (1024^6)
 
-JEDEC
+### JEDEC
 
 **Note** JEDEC options works basically the same as the base-2 ones, except
 that if you use the `prepend` option, it will, for example, correctly add
